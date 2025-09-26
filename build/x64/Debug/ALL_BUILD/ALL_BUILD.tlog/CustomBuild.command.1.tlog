@@ -1,0 +1,10 @@
+^C:\USERS\ARYA9\OPENCVTEST\CMAKELISTS.TXT
+setlocal
+C:\Users\arya9\Downloads\winlibs-x86_64-posix-seh-gcc-13.1.0-mingw-w64msvcrt-11.0.0-r5\mingw64\bin\cmake.exe -SC:/Users/arya9/opencvtest -BC:/Users/arya9/opencvtest/build --check-stamp-file C:/Users/arya9/opencvtest/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

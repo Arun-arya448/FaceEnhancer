@@ -1,0 +1,10 @@
+^C:\USERS\ARYA9\OPENCVTEST\BUILD\CMAKEFILES\F27C913FBCEE60A09754D71C9CF8BBB7\GENERATE.STAMP.RULE
+setlocal
+C:\Users\arya9\Downloads\winlibs-x86_64-posix-seh-gcc-13.1.0-mingw-w64msvcrt-11.0.0-r5\mingw64\bin\cmake.exe -SC:/Users/arya9/opencvtest -BC:/Users/arya9/opencvtest/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/arya9/opencvtest/build/opencvtest.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
